@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ArtConnect - pre-launch лендинг приложения, где культура становится ближе: афиша событий, поиск компании, мастера народных промыслов и партнерские культурные проекты."
+    />
+    <title>ArtConnect - афиша, люди и мастера в одном приложении</title>
+
+    <!--
+      При необходимости замените Google Fonts на локальные шрифты.
+      Ruslan Display дает декоративный русский характер, Manrope отвечает за современную читаемость.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oranienbaum&family=Ruslan+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+        <span class="scroll-progress" aria-hidden="true"></span>
+    <div class="site-frame" aria-hidden="true">
+      <span class="site-frame__top"></span>
+      <span class="site-frame__left">
+        <span class="site-frame__flower site-frame__flower--yellow"></span>
+        <span class="site-frame__spark site-frame__spark--one"></span>
+        <span class="site-frame__spark site-frame__spark--two"></span>
+      </span>
+      <span class="site-frame__right"></span>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Главная навигация">
+        <a class="brand" href="#top" aria-label="ArtConnect - на главный экран">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>ArtConnect</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#why">Почему</a>
+          <a href="#how">Как работает</a>
+          <a href="#audiences">Для кого</a>
+          <a href="#partners">Партнерам</a>
+          <a href="#join">Заявка</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+  <div class="hero-decor" aria-hidden="true">
+    <span class="folk-shape folk-shape--sun"></span>
+    <span class="folk-shape folk-shape--crown"></span>
+    <span class="folk-shape folk-shape--matryoshka"></span>
+    <span class="folk-shape folk-shape--spindle"></span>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-content reveal">
+      <span class="kicker">Pre-launch · MVP Москва</span>
+      <h1>ArtConnect <span>афиша, люди и мастера в одном приложении</span></h1>
+      <p class="hero-copy">
+        Находите необычные культурные события, идите вместе с единомышленниками,
+        открывайте мастеров народных промыслов и записывайтесь на мастер-классы.
+      </p>
+      <p class="launch-note">
+        Запуск MVP: Москва · афиша событий · поиск компании · профили мастеров.
+        Сейчас собираем первых пользователей, мастеров, организаторов и
+        партнеров.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#join" data-choose="user"
+          >Получить ранний доступ</a
+        >
+        <a class="btn btn--blue" href="#join" data-choose="master">Я мастер</a>
+        <a class="btn btn--light" href="#join" data-choose="org"
+          >Организатор / партнер</a
+        >
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" data-delay="1">
+      <div
+        class="product-showcase"
+        aria-label="Прототип мобильного приложения ArtConnect"
+      >
+        <div class="phone-mockup" data-tilt aria-hidden="true">
+          <div class="phone-screen">
+            <div class="phone-status">
+              <span>10:42</span>
+              <span>LTE 84%</span>
+            </div>
+
+            <div class="app-header">
+              <div>
+                <h3>Куда пойдем сегодня?</h3>
+                <span>Москва · народные промыслы</span>
+              </div>
+              <div class="app-icons">
+                <span class="app-icon">⌕</span>
+                <span class="app-icon">•</span>
+              </div>
+            </div>
+
+            <div class="app-content">
+              <div class="app-hero-card">
+                <span>Подборка недели</span>
+                <strong>Лучшие выставки и мастер-классы мая</strong>
+                <span class="app-pill">Смотреть подборку</span>
+              </div>
+
+              <article class="event-card">
+                <div class="event-thumb"></div>
+                <div>
+                  <h4>Гжель: роспись и открытая мастерская</h4>
+                  <p>18 мая, 13:00 · арт-пространство</p>
+                  <div class="event-actions">
+                    <span>Хочу пойти</span>
+                    <span>Найти компанию</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <div
+                  class="event-thumb"
+                  style="
+                    --event-image: url(&quot;assets/media/загруженное (8).png&quot;);
+                  "
+                ></div>
+                <div>
+                  <h4>Ярмарка ремесел и локальных брендов</h4>
+                  <p>До 30 мая · культурный центр</p>
+                  <div class="event-actions">
+                    <span>Записаться</span>
+                    <span>73% совпадение</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <nav class="app-bottom-nav" aria-label="Навигация прототипа">
+              <span>Главная</span>
+              <span>Каталог</span>
+              <span>Вместе</span>
+              <span>Профиль</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p class="visual-caption">
+        Главная механика MVP: событие → интерес → компания → запись или участие.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div
+      class="route-strip reveal"
+      data-delay="2"
+      aria-label="Сценарий продукта"
+    >
+      <span>Нашла событие</span>
+      <span>Нашла компанию</span>
+      <span>Записалась</span>
+      <span>Открыла мастера</span>
+    </div>
+  </div>
+  <div class="ornament-band" aria-hidden="true"></div>
+</section>
+            <section class="section" id="why">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Почему это нужно</span>
+            <h2>Интерес к культуре есть. Участия часто не происходит.</h2>
+            <p>
+              Культурных событий много, но путь к ним неудобный: афиши разбросаны,
+              мастеров сложно найти, на мероприятия часто не с кем пойти, а организаторам
+              трудно попасть в нужную аудиторию.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="card reveal" data-tilt>
+              <span class="card-icon">1</span>
+              <h3>Не с кем пойти</h3>
+              <p>Люди сохраняют события, но часто не идут одни: не хватает безопасного и неловкого-free способа найти компанию.</p>
+            </article>
+
+            <article class="card reveal" data-delay="1" data-tilt>
+              <span class="card-icon">2</span>
+              <h3>Афиши разбросаны</h3>
+              <p>Музеи, Telegram, соцсети, сайты площадок и ярмарок живут отдельно, поэтому интересные события теряются.</p>
+            </article>
+
+            <article class="card reveal" data-delay="2" data-tilt>
+              <span class="card-icon">3</span>
+              <h3>Мастеров сложно найти</h3>
+              <p>У многих авторов нет понятного цифрового профиля, портфолио, расписания и канала заявок.</p>
+            </article>
+
+            <article class="card reveal" data-tilt>
+              <span class="card-icon">4</span>
+              <h3>Аудитория не доходит</h3>
+              <p>Организаторам трудно достучаться именно до тех, кому выставка, лекция или мастер-класс действительно интересны.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section steps" id="how">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Как это работает</span>
+            <h2>Событие → интерес → компания → участие.</h2>
+            <p>
+              ArtConnect собирает путь пользователя в одном месте: от первого интереса
+              до записи, чата или знакомства с мастером.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <span class="step-number">01</span>
+              <h3>Выберите интерес</h3>
+              <p>Народные промыслы, выставки, мастер-классы, лекции, ярмарки, концерты и локальные культурные события.</p>
+            </article>
+
+            <article class="step-card reveal" data-delay="1">
+              <span class="step-number">02</span>
+              <h3>Найдите событие или мастера</h3>
+              <p>Смотрите карточки, фото, дату, цену, формат участия, отзывы и профиль автора или площадки.</p>
+            </article>
+
+            <article class="step-card reveal" data-delay="2">
+              <span class="step-number">03</span>
+              <h3>Пойдите вместе</h3>
+              <p>Нажмите «Ищу компанию», получите совпадение по интересам и договоритесь в приватном чате.</p>
+            </article>
+          </div>
+
+          <div class="safety-note reveal">
+            <strong>«Идём вместе» — это не дейтинг, а культурный мэтчинг.</strong>
+            <p>
+              Пользователь сам выбирает, с кем идти, видит интересы человека,
+              отправляет запрос только по взаимному согласию и общается в приватном
+              чате после подтверждения.
+            </p>
+          </div>
+        </div>
+      </section>
+            <section class="section" id="audiences">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Для кого ArtConnect</span>
+            <h2>Четыре аудитории. Один культурный маршрут.</h2>
+            <p>
+              Это pre-launch лендинг: мы собираем заявки от будущих пользователей,
+              мастеров, организаторов и инвесторов/крупных партнеров.
+            </p>
+          </div>
+
+          <div class="audience-grid">
+            <article class="audience-card audience-card--user reveal" data-tilt>
+              <span class="card-icon">Л</span>
+              <h3>Для зрителей и любителей культуры</h3>
+              <p>Найдите, куда сходить, и с кем пойти: афиша необычных событий, подбор по интересам, избранное и безопасный поиск компании.</p>
+              <a class="btn btn--blue" href="#join" data-choose="user">Хочу ранний доступ</a>
+            </article>
+
+            <article class="audience-card audience-card--master reveal" data-delay="1" data-tilt>
+              <span class="card-icon">М</span>
+              <h3>Для мастеров и творцов</h3>
+              <p>Покажите свои работы тем, кто ищет настоящее: профиль-портфолио, заявки на мастер-классы, витрина изделий и расписание.</p>
+              <a class="btn" href="#join" data-choose="master">Стать мастером ArtConnect</a>
+            </article>
+
+            <article class="audience-card audience-card--org reveal" data-delay="2" data-tilt>
+              <span class="card-icon">О</span>
+              <h3>Для музеев и организаторов</h3>
+              <p>Приведите на событие аудиторию, которой это интересно: размещение мероприятий, подборки, спецпроекты и аналитика интересов.</p>
+              <a class="btn btn--light" href="#join" data-choose="org">Предложить мероприятие</a>
+            </article>
+
+            <article class="audience-card audience-card--investor reveal" data-tilt>
+              <span class="card-icon">И</span>
+              <h3>Для брендов, фондов и инвесторов</h3>
+              <p>Запускайте культурные коллаборации с измеримым эффектом: пилоты, корпоративные программы, ESG и поддержка локальных мастеров.</p>
+              <a class="btn btn--gold" href="#join" data-choose="investor">Обсудить партнерство</a>
+            </article>
+          </div>
+        </div>
+      </section>
+            <section class="section masters-section" id="masters">
+        <div class="container">
+          <div class="masters-panel reveal">
+            <figure class="masters-visual" aria-label="Горизонтальный визуал с народными промыслами">
+              <img
+                src="assets/media/masters-crafts-banner.png"
+                alt="Гжельская керамика, вышивка, деревянная резьба, матрешка и расписная шкатулка в мастерской"
+              />
+            </figure>
+
+            <div class="masters-content">
+              <span class="section-kicker">Для мастеров</span>
+              <h2>Ваше ремесло должно быть видно.</h2>
+              <p class="masters-lead">
+                Вы мастер, художник, преподаватель или автор изделий? <span>ArtConnect</span> поможет
+                собрать вашу цифровую витрину: работы, история, город, мастер-классы,
+                расписание и заявки от людей, которым интересно ваше направление.
+              </p>
+              <ul class="feature-list masters-feature-list">
+                <li>Профиль и портфолио без сложного продвижения.</li>
+                <li>Заявки на мастер-классы, события и будущие продажи изделий.</li>
+                <li>Участие в подборках, ярмарках и партнерских проектах.</li>
+                <li>Возможность рассказать о промысле человеческим языком.</li>
+              </ul>
+              <div class="actions masters-actions">
+                <a class="btn" href="#join" data-choose="master">Оставить заявку мастера</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <section class="section partners" id="partners">
+        <div class="container">
+          <div class="partners-panel reveal">
+            <div>
+              <span class="section-kicker">Партнеры и инвесторы</span>
+              <h2>Культурные проекты, которые можно измерять.</h2>
+              <p>
+                ArtConnect помогает культурным организациям находить свою аудиторию еще
+                до запуска приложения, а брендам и корпорациям — создавать культурные
+                коллаборации с понятной пользой.
+              </p>
+              <p>
+                Для инвесторов это продукт с несколькими аудиториями и понятной логикой:
+                событие → компания → чат → билет или запись.
+              </p>
+            </div>
+
+            <ul class="b2b-list" aria-label="Возможности для партнеров и инвесторов">
+              <li>
+                <strong>Организациям</strong>
+                Размещение событий, тематические подборки, спецпроекты и привлечение молодой аудитории.
+              </li>
+              <li>
+                <strong>Брендам и корпорациям</strong>
+                Культурные коллаборации, корпоративные мастер-классы, брендированные подборки и ESG-проекты.
+              </li>
+              <li>
+                <strong>Инвесторам</strong>
+                Комиссии, продвижение событий, партнерские интеграции, маркетплейс и корпоративные решения.
+              </li>
+              <li>
+                <strong>MVP-задел</strong>
+                UX-прототип, структура данных, сценарий мэтчинга и понятный пилот в Москве и Санкт-Петербурге.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="proof">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Проверка идеи</span>
+            <h2>Что хотят видеть будущие пользователи.</h2>
+            <p>
+              В материалах проекта и интервью повторяются одни и те же ожидания:
+              понятный интерфейс, фильтры, доверие, отзывы, безопасность и минимум мусора.
+            </p>
+          </div>
+
+          <ul class="chips-list reveal" aria-label="Ожидания пользователей">
+            <li>Удобная афиша необычных событий</li>
+            <li>Профиль-портфолио для творческих людей</li>
+            <li>Безопасный поиск компании</li>
+            <li>Мастер-классы и короткое обучение</li>
+            <li>Фильтры по городу, цене и формату</li>
+            <li>Отзывы и доверие к авторам</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section join" id="join">
+        <div class="container">
+          <div class="join-panel reveal">
+            <div class="section-heading">
+              <span class="section-kicker">Заявка до запуска</span>
+              <h2>Станьте частью ArtConnect до запуска приложения.</h2>
+              <p>
+                Выберите свой формат участия. Ниже можно заменить кнопки на отдельные
+                Google Формы для каждой аудитории.
+              </p>
+            </div>
+
+            <div class="join-grid" role="list">
+              <a class="join-card is-active" href="https://forms.gle/artconnect-early-access" data-role="user" data-tilt>
+                <h3>Ранний доступ</h3>
+                <p>Для будущих пользователей, которые хотят первыми попробовать афишу и «Идём вместе».</p>
+              </a>
+
+              <a class="join-card" href="https://forms.gle/artconnect-master" data-role="master" data-tilt>
+                <h3>Я мастер</h3>
+                <p>Для авторов, мастерских, художников, преподавателей и ремесленных школ.</p>
+              </a>
+
+              <a class="join-card" href="https://forms.gle/artconnect-organization" data-role="org" data-tilt>
+                <h3>Организация / событие</h3>
+                <p>Для музеев, культурных центров, фестивалей, площадок и организаторов.</p>
+              </a>
+
+              <a class="join-card" href="https://forms.gle/artconnect-investor" data-role="investor" data-tilt>
+                <h3>Инвестор / партнер</h3>
+                <p>Для брендов, фондов, корпораций, акселераторов и стратегических партнеров.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+        <div class="wheat-field" aria-hidden="true">
+      <span class="wheat-field__layer wheat-field__layer--back"></span>
+      <span class="wheat-field__layer wheat-field__layer--middle"></span>
+      <span class="wheat-field__layer wheat-field__layer--front"></span>
+    </div>
+
+    <footer class="footer">
+      <div class="container">ArtConnect © 2026 · афиша, люди и мастера в одном приложении</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

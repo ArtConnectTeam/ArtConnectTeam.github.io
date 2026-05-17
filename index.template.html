@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ArtConnect - pre-launch лендинг приложения, где культура становится ближе: афиша событий, поиск компании, мастера народных промыслов и партнерские культурные проекты."
+    />
+    <title>ArtConnect - афиша, люди и мастера в одном приложении</title>
+
+    <!--
+      При необходимости замените Google Fonts на локальные шрифты.
+      Ruslan Display дает декоративный русский характер, Manrope отвечает за современную читаемость.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oranienbaum&family=Ruslan+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    {% include 'components/header.html' %}
+
+    <main id="top">
+      {% include 'components/hero.html' %}
+      {% include 'components/steps.html' %}
+      {% include 'components/audience.html' %}
+      {% include 'components/masters.html' %}
+      {% include 'components/feedback-forms.html' %}
+    </main>
+
+    {% include 'components/footer.html' %}
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
