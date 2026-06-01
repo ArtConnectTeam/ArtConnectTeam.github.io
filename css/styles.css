@@ -557,33 +557,34 @@ main,
   --tilt-x: 0deg;
   --tilt-y: 0deg;
   position: relative;
-  width: min(312px, 86vw);
-  padding: 10px;
-  aspect-ratio: 9 / 18.35;
-  border: 2px solid #11151b;
-  border-radius: 42px;
-  background: linear-gradient(145deg, #1a1f28, #050609);
-  box-shadow: 0 30px 55px rgba(13, 11, 9, 0.28);
+  width: min(306px, 100%);
+  aspect-ratio: 592 / 1276;
+  border: 0;
+  background: transparent;
+  filter: drop-shadow(0 30px 42px rgba(13, 11, 9, 0.26));
   transform: perspective(900px) rotate(-1.5deg) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
-  transition: transform 320ms ease, box-shadow 320ms ease;
+  transition: transform 320ms ease, filter 320ms ease;
 }
 
 .product-showcase:hover .phone-mockup {
   transform: perspective(900px) rotate(-0.8deg) translateY(-4px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
-  box-shadow: 0 34px 70px rgba(13, 11, 9, 0.34);
+  filter: drop-shadow(0 34px 52px rgba(13, 11, 9, 0.32));
 }
 
 .phone-mockup::before {
-  content: "";
+  content: none;
+}
+
+.phone-mockup__image {
   position: absolute;
-  top: 8px;
-  left: 50%;
-  z-index: 3;
-  width: 112px;
-  height: 25px;
-  border-radius: 0 0 17px 17px;
-  background: #050609;
-  transform: translateX(-50%);
+  top: -4.78%;
+  left: -45.1%;
+  display: block;
+  width: 189.53%;
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
 }
 
 .phone-screen {
@@ -1508,7 +1509,7 @@ main,
   }
 
   .phone-mockup {
-    width: min(300px, 68vw);
+    width: min(316px, 68vw);
   }
 }
 
@@ -1519,7 +1520,7 @@ main,
   }
 
   .phone-mockup {
-    width: min(282px, 100%);
+    width: min(316px, 100%);
   }
 }
 
@@ -1538,7 +1539,7 @@ main,
   }
 
   .phone-mockup {
-    width: min(330px, 100%);
+    width: min(336px, 100%);
   }
 }
 
@@ -1685,8 +1686,7 @@ main,
   }
 
   .phone-mockup {
-    width: min(306px, 88vw);
-    border-radius: 38px;
+    width: min(286px, 88vw);
     transform: translateY(0) rotate(-1.2deg);
     animation: phone-mobile-float 4.8s ease-in-out infinite;
     touch-action: pan-y;
@@ -1694,11 +1694,7 @@ main,
 
   .product-showcase:hover .phone-mockup {
     transform: translateY(0) rotate(-1.2deg);
-    box-shadow: 0 30px 55px rgba(13, 11, 9, 0.28);
-  }
-
-  .phone-screen {
-    border-radius: 29px;
+    filter: drop-shadow(0 30px 42px rgba(13, 11, 9, 0.26));
   }
 
   .folk-shape--matryoshka {
@@ -1852,12 +1848,7 @@ main,
   }
 
   .phone-mockup {
-    width: min(282px, 92vw);
-    border-radius: 36px;
-  }
-
-  .phone-screen {
-    border-radius: 27px;
+    width: min(274px, 100%);
   }
 
   .app-content {
