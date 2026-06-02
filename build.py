@@ -19,8 +19,8 @@ def main() -> None:
 
     # The source template uses server-root paths. The built file is opened from
     # the project folder, so relative paths keep CSS and JS working via file://.
-    html = html.replace('href="/css/styles.css"', 'href="css/styles.css"')
-    html = html.replace('src="/js/main.js"', 'src="js/main.js"')
+    html = html.replace('href="/css/styles.css?v=join-wheat-bg-20260602"', 'href="css/styles.css?v=join-wheat-bg-20260602"')
+    html = html.replace('src="/js/main.js?v=join-wheat-bg-20260602"', 'src="js/main.js?v=join-wheat-bg-20260602"')
 
     for output_file in OUTPUT_FILES:
         output_file.write_text(html, encoding="utf-8")
