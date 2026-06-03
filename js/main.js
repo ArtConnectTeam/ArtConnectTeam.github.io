@@ -44,6 +44,32 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-choose]").forEach((link) => {
     link.addEventListener("click", () => chooseForm(link.dataset.choose));
   });
+
+  const cleanUrl = () => {
+    if (window.location.hash && window.history.replaceState) {
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+    }
+  };
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+      const target = targetId === "#top"
+        ? document.documentElement
+        : document.querySelector(targetId);
+
+      if (!target) return;
+
+      event.preventDefault();
+      target.scrollIntoView({
+        behavior: reducedMotion.matches ? "auto" : "smooth",
+        block: "start",
+      });
+      cleanUrl();
+    });
+  });
+
+  cleanUrl();
   
   if (!reducedMotion.matches && !mobileViewport.matches) {
     document.querySelectorAll("[data-tilt]").forEach((element) => {
